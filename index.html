@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santo Neon — Neon LED artesanal sob medida | São Paulo</title>
+  <meta name="description" content="Neon LED artesanal com impressão 3D no acrílico, LED que não estoura na câmera e 1 ano de garantia. Feito sob medida em São Paulo para marcas que não competem por preço.">
+  <meta property="og:title" content="Santo Neon — Neon LED artesanal sob medida">
+  <meta property="og:description" content="Impressão 3D no acrílico, LED flicker-free na câmera e 1 ano de garantia. Peça seu orçamento.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="assets/og.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060312'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-style='italic' text-anchor='middle' fill='%23ff2fb3' style='paint-order:stroke' stroke='%23ff2fb3' stroke-width='1'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/SpaceGrotesk-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Pacifico-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fundo: partículas Three.js -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="topo">
+    <a class="brand" href="#topo" aria-label="Santo Neon — início">
+      <span class="brand-santo">SANTO</span><span class="brand-neon">neon</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#camera">Teste da câmera</a>
+      <a href="#cases">Cases</a>
+      <a href="#processo">Processo</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="#orcamento">Pedir orçamento</a>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <p class="eyebrow hero-eyebrow">Neon LED artesanal · sob medida · São Paulo</p>
+      <h1 class="hero-title">
+        <span class="hero-line">Sua marca em</span>
+        <span class="neon-word" id="heroNeon">neon de verdade</span>
+      </h1>
+      <p class="hero-sub">
+        Impressão 3D no acrílico, LED que <strong>não estoura na câmera</strong> e 1 ano de garantia.
+        Neon artesanal para marcas que não competem por preço.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#orcamento">Quero meu neon</a>
+        <a class="btn btn-ghost" href="#camera">Ver o teste da câmera</a>
+      </div>
+      <ul class="hero-badges" aria-label="Diferenciais">
+        <li><span class="badge-dot badge-pink"></span> Impressão 3D no acrílico</li>
+        <li><span class="badge-dot badge-cyan"></span> Flicker-free na câmera</li>
+        <li><span class="badge-dot badge-amber"></span> 1 ano de garantia</li>
+      </ul>
+      <a class="scroll-hint" href="#clientes" aria-label="Rolar para ver mais">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ CLIENTES / MARQUEE ============ -->
+    <section class="marquee-wrap" id="clientes" aria-label="Clientes atendidos">
+      <div class="marquee" data-marquee>
+        <div class="marquee-track">
+          <span>Barreto</span><i>✦</i>
+          <span>Chaim</span><i>✦</i>
+          <span>Pecorino</span><i>✦</i>
+          <span class="marquee-you">sua marca aqui</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGIA ============ -->
+    <section class="section" id="tecnologia">
+      <p class="eyebrow" data-reveal>A tecnologia</p>
+      <h2 class="section-title" data-reveal>
+        Todo neon parece igual.<br><em class="em-cyan">Até você ligar a câmera.</em>
+      </h2>
+      <p class="section-lead" data-reveal>
+        Neon genérico se compara por preço. O nosso se compara em campanha, vitrine
+        e story de cliente. A diferença está no que a gente coloca dentro dele.
+      </p>
+
+      <div class="cards" data-reveal-group>
+        <article class="card">
+          <div class="card-icon icon-pink" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6 8 15v18l16 9 16-9V15L24 6z"/><path d="M24 24 8 15m16 9 16-9M24 24v18"/>
+            </svg>
+          </div>
+          <h3>Impressão 3D no acrílico</h3>
+          <p>O traço da sua marca reproduzido com precisão de máquina e acabamento
+             de ateliê. Curva fiel, encaixe perfeito — sem improviso de bancada.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon icon-cyan" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="12" width="30" height="24" rx="5"/><path d="m34 20 10-5v18l-10-5"/><circle cx="19" cy="24" r="6"/>
+            </svg>
+          </div>
+          <h3>LED que não estoura na câmera</h3>
+          <p>Luz estável, sem flicker, listras ou estouro em foto e vídeo. Seu neon
+             rende conteúdo todos os dias — do story do cliente à campanha paga.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon icon-amber" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 4 8 10v12c0 10 6.5 17.5 16 22 9.5-4.5 16-12 16-22V10L24 4z"/><path d="m16 24 6 6 10-12"/>
+            </svg>
+          </div>
+          <h3>1 ano de garantia</h3>
+          <p>Garantia real, por escrito. Se apagar, a gente reacende. É o tipo de
+             promessa que neon de esquina não assina.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TESTE DA CÂMERA ============ -->
+    <section class="section" id="camera">
+      <p class="eyebrow" data-reveal>O teste da câmera</p>
+      <h2 class="section-title" data-reveal>
+        Aponte a câmera.<br><em class="em-pink">É aqui que o barato quebra.</em>
+      </h2>
+      <p class="section-lead" data-reveal>
+        Neon comum pisca em alta frequência: a olho nu ninguém vê, mas a câmera vê —
+        e transforma sua fachada em listras e estouro. Compare:
+      </p>
+
+      <div class="camera-demo" data-reveal>
+        <div class="camera-toggle" role="tablist" aria-label="Comparar tipos de neon">
+          <button class="toggle-btn" id="btnCheap" role="tab" aria-selected="false">Neon comum</button>
+          <button class="toggle-btn is-active" id="btnSanto" role="tab" aria-selected="true">Santo Neon</button>
+        </div>
+
+        <div class="viewfinder mode-santo" id="viewfinder" data-tilt>
+          <div class="vf-ui" aria-hidden="true">
+            <span class="vf-rec"><i></i>REC</span>
+            <span class="vf-label" id="vfLabel">LED flicker-free</span>
+            <span class="vf-battery">▮▮▮▯</span>
+          </div>
+          <span class="vf-corner tl"></span><span class="vf-corner tr"></span>
+          <span class="vf-corner bl"></span><span class="vf-corner br"></span>
+          <div class="vf-stage">
+            <span class="vf-neon" id="vfNeon">aberto</span>
+            <div class="vf-bands" aria-hidden="true"></div>
+          </div>
+          <p class="vf-caption" id="vfCaption">Luz contínua e estável: nítido em qualquer câmera, em qualquer story.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASES ============ -->
+    <section class="section" id="cases">
+      <p class="eyebrow" data-reveal>Cases</p>
+      <h2 class="section-title" data-reveal>Quem já <em class="em-amber">acendeu</em> com a gente</h2>
+      <p class="section-lead" data-reveal>
+        Cada projeto sai do briefing com uma cara própria — e volta em foto e vídeo
+        que vendem sozinhos.
+      </p>
+
+      <div class="cases-grid" data-reveal-group>
+        <article class="case-card" data-tilt>
+          <div class="case-stage stage-amber">
+            <span class="case-neon case-script">Barreto</span>
+          </div>
+          <div class="case-info">
+            <h3>Barreto</h3>
+            <p>Fachada em neon LED · âmbar quente</p>
+          </div>
+        </article>
+        <article class="case-card" data-tilt>
+          <div class="case-stage stage-cyan">
+            <span class="case-neon case-block">CHAIM</span>
+          </div>
+          <div class="case-info">
+            <h3>Chaim</h3>
+            <p>Painel interno · ciano sobre acrílico</p>
+          </div>
+        </article>
+        <article class="case-card" data-tilt>
+          <div class="case-stage stage-pink">
+            <span class="case-neon case-script">Pecorino</span>
+          </div>
+          <div class="case-info">
+            <h3>Pecorino</h3>
+            <p>Letreiro de salão · rosa clássico</p>
+          </div>
+        </article>
+      </div>
+      <p class="cases-note" data-reveal>Seu projeto pode ser o próximo — e vai ficar bonito na câmera.</p>
+    </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="section" id="processo">
+      <p class="eyebrow" data-reveal>O processo</p>
+      <h2 class="section-title" data-reveal>Do rabisco à parede <em class="em-green">em 4 passos</em></h2>
+
+      <ol class="steps">
+        <li class="step" data-step>
+          <span class="step-num">01</span>
+          <div>
+            <h3>Briefing</h3>
+            <p>Você conta a ideia, o espaço e o tamanho — se souber. A gente orienta o resto.</p>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-num">02</span>
+          <div>
+            <h3>Desenho &amp; simulação</h3>
+            <p>Você aprova em cima de arte real e vê o neon no seu espaço antes de ele existir.</p>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-num">03</span>
+          <div>
+            <h3>Produção artesanal</h3>
+            <p>Impressão 3D no acrílico + LED flicker-free, montado à mão no nosso ateliê.</p>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-num">04</span>
+          <div>
+            <h3>Instalação &amp; garantia</h3>
+            <p>Instalado, testado na câmera e coberto por 1 ano de garantia por escrito.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ ORÇAMENTO ============ -->
+    <section class="section section-form" id="orcamento">
+      <p class="eyebrow" data-reveal>Orçamento</p>
+      <h2 class="section-title" data-reveal>Monte seu neon <em class="em-pink">agora</em></h2>
+      <p class="section-lead" data-reveal>
+        Cada resposta acende um pedaço do seu pedido. No final, tudo chega pronto
+        no nosso WhatsApp — e a resposta costuma sair no mesmo dia útil.
+      </p>
+
+      <div class="form-layout" data-reveal>
+        <!-- Preview -->
+        <div class="preview-panel" aria-hidden="true">
+          <div class="preview-frame">
+            <span class="preview-neon" id="previewNeon">sua marca</span>
+          </div>
+          <div class="swatches" id="swatches" role="group" aria-label="Cor do neon">
+            <button class="swatch is-active" data-color="rosa"  style="--sw:#ff2fb3" aria-label="Rosa"></button>
+            <button class="swatch" data-color="ciano" style="--sw:#23e6ff" aria-label="Ciano"></button>
+            <button class="swatch" data-color="âmbar" style="--sw:#ffb02e" aria-label="Âmbar"></button>
+            <button class="swatch" data-color="verde" style="--sw:#3dffa0" aria-label="Verde"></button>
+          </div>
+          <div class="progress">
+            <div class="progress-bar"><span id="progressFill"></span></div>
+            <p class="progress-label"><b id="progressPct">0%</b> do pedido aceso</p>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <form class="lead-form" id="leadForm" novalidate>
+          <fieldset class="q" data-q="tipo">
+            <legend><span class="q-num">1</span> O que vamos acender?</legend>
+            <div class="chips" data-group="tipo">
+              <button type="button" class="chip" data-value="Minha logo">Minha logo</button>
+              <button type="button" class="chip" data-value="Uma frase">Uma frase</button>
+              <button type="button" class="chip" data-value="Decoração">Decoração</button>
+              <button type="button" class="chip" data-value="Evento">Evento</button>
+            </div>
+            <label class="field field-preview">
+              <span>O que vai escrito? <small>(opcional — veja acender ao lado)</small></span>
+              <input type="text" id="inputTexto" name="texto" maxlength="26" placeholder="ex.: Pecorino" autocomplete="off">
+            </label>
+          </fieldset>
+
+          <fieldset class="q" data-q="local">
+            <legend><span class="q-num">2</span> Onde vai ficar?</legend>
+            <div class="chips" data-group="local">
+              <button type="button" class="chip" data-value="Fachada">Fachada</button>
+              <button type="button" class="chip" data-value="Área interna">Área interna</button>
+              <button type="button" class="chip" data-value="Evento / cenário">Evento / cenário</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-q="tamanho">
+            <legend><span class="q-num">3</span> Já sabe o tamanho?</legend>
+            <div class="chips" data-group="tamanho">
+              <button type="button" class="chip" data-value="sim">Sim, já medi</button>
+              <button type="button" class="chip" data-value="nao">Ainda não</button>
+            </div>
+            <div class="size-fields" id="sizeFields" hidden>
+              <label class="field">
+                <span>Largura (cm)</span>
+                <input type="number" id="inputLargura" name="largura" min="10" max="1000" inputmode="numeric" placeholder="120">
+              </label>
+              <label class="field">
+                <span>Altura (cm)</span>
+                <input type="number" id="inputAltura" name="altura" min="10" max="1000" inputmode="numeric" placeholder="60">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-q="contato">
+            <legend><span class="q-num">4</span> Pra quem a gente responde?</legend>
+            <label class="field">
+              <span>Seu nome *</span>
+              <input type="text" id="inputNome" name="nome" required autocomplete="name" placeholder="Nome">
+            </label>
+            <label class="field">
+              <span>Seu WhatsApp *</span>
+              <input type="tel" id="inputZap" name="whatsapp" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999">
+            </label>
+            <label class="field">
+              <span>Empresa ou @ no Instagram <small>(opcional)</small></span>
+              <input type="text" id="inputEmpresa" name="empresa" autocomplete="organization" placeholder="@suamarca">
+            </label>
+          </fieldset>
+
+          <p class="form-error" id="formError" role="alert" hidden>Preencha nome e WhatsApp para a gente responder.</p>
+
+          <button type="submit" class="btn btn-primary btn-submit" id="btnSubmit">
+            Enviar e receber orçamento
+          </button>
+          <p class="form-hint">Seu pedido abre pronto no WhatsApp — você só confirma o envio.</p>
+
+          <noscript>
+            <p class="form-hint">Ative o JavaScript para usar o formulário — ou chame direto no WhatsApp pelo botão no canto da tela.</p>
+          </noscript>
+        </form>
+
+        <!-- Sucesso -->
+        <div class="form-success" id="formSuccess" hidden>
+          <span class="success-neon">obrigado!</span>
+          <h3>Pedido aceso e enviado.</h3>
+          <p>Seu WhatsApp abriu com tudo preenchido — é só confirmar o envio.
+             Em horário comercial, a resposta costuma sair no mesmo dia.</p>
+          <button type="button" class="btn btn-ghost" id="btnAgain">Montar outro pedido</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="#topo" aria-label="Santo Neon — voltar ao topo">
+        <span class="brand-santo">SANTO</span><span class="brand-neon">neon</span>
+      </a>
+      <p class="footer-tag">Neon LED artesanal, sob medida — São Paulo.</p>
+      <nav class="footer-links" aria-label="Contato">
+        <a href="#orcamento">Orçamento</a>
+        <a id="footerZap" href="#orcamento" target="_blank" rel="noopener">WhatsApp</a>
+        <a id="footerInsta" href="#topo" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <p class="footer-legal">© <span id="year">2026</span> Santo Neon · Site feito para converter — por Vitamina Publicitária.</p>
+  </footer>
+
+  <a class="whats-fab" id="whatsFab" href="#orcamento" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c2 .9 4 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.8c-.3.8-1.5 1.5-2.4 1.6-.6.1-1.4.2-4.2-.9-3.5-1.5-5.8-5-6-5.2-.2-.2-1.4-1.9-1.4-3.6s.9-2.6 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.1 1 2.5 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+  </a>
+
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
